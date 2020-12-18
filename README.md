@@ -11,7 +11,7 @@ Usage:
 * Simply fireup the terminal and run ***"python3 Nmapscanner.py"***  
 * Give a target IP  
 * Choose the scan type  
-* Voila! that's it you got a result  
+* Voila! that's it, you got a result  
       
 Thank you for using automated_Nmap-using_Python.
 
