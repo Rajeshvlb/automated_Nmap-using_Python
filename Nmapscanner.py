@@ -29,7 +29,7 @@ if opin == '5':
 elif opin == '1':
     print("Please wait Nmap is scanning the TCP...\nPress Ctrl+C to terminate.....")
     scanner.scan(ipaddr, '1-1024', '-v -sS')
-    #print(scanner.scaninfo())#
+    print(scanner.scaninfo())
     print("IP Status: ", scanner[ipaddr].state())
     print(scanner[ipaddr].all_protocols())
     print("Open Ports:", scanner[ipaddr]['tcp'].keys())
@@ -37,7 +37,7 @@ elif opin == '1':
 elif opin == '2':
     print("Please wait Nmap is scanning the UDP...\nPress Ctrl+C to terminate.....")
     scanner.scan(ipaddr, '1-1024', '-sU -v')
-   # print(scanner.scaninfo())#
+    print(scanner.scaninfo())
     print("IP Status: ", scanner[ipaddr].state())
     print(scanner[ipaddr].all_protocols())
     print("Open Ports:", scanner[ipaddr]['udp'].keys())
@@ -45,7 +45,7 @@ elif opin == '2':
 elif opin == '3':
     print("Please wait Nmap is handling COMPREHENSIVE scan...\nPress Ctrl+C to terminate.....")
     scanner.scan(ipaddr, '1-1024', '-v -sV -sC -sS -A -O')
-    #print(scanner.scaninfo())#
+    print(scanner.scaninfo())
     print("IP Status: ", scanner[ipaddr].state())
     print(scanner[ipaddr].all_protocols())
     print("Open Ports:", scanner[ipaddr]['tcp'].keys())
@@ -53,7 +53,7 @@ elif opin == '3':
 elif opin == '4':
     print("Please wait Nmap is scanning FASTly...\nPress Ctrl+C to terminate.....")
     scanner.scan(ipaddr, None, '-F')
-   # print(scanner.scaninfo())#
+    print(scanner.scaninfo())
     print("IP Status: ", scanner[ipaddr].state())
     print(scanner[ipaddr].all_protocols())
     print("Open Ports: ", scanner[ipaddr]['tcp'].keys())
