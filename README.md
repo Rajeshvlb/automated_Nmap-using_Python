@@ -13,6 +13,8 @@ Usage:
 * Choose the scan type  
 * Voila! that's it you got a result  
       
+Thank you for using automated_Nmap-using_Python.
+
 **You may expect the updated version in future!**  
-Thank you for using automated_Nmap-using_Python.  
+  
 Feel free to contact me via email.....Until then bye from HateOfficial!
